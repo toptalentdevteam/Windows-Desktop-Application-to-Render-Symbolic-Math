@@ -1,0 +1,30 @@
+Analytics & Physics libraries are written by Sergey L. Gladkiy.
+Copyright © Sergey L. Gladkiy
+E-mail : lrndlrnd@mail.ru
+
+Academic version LICENSE:
+The following libraries are provided under the MIT license :
+	NRTE.dll
+	Mathematics.dll
+	Physics.dll
+	Analytics.dll
+	Analytics.Real.dll
+	Exversion.dll
+
+WARRANTY:
+THIS SOFTWARE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
+OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABITY AND
+FITNESS FOR A PARTICULAR PURPOSE.
+
+The Academic version of the Analytics library works with simple math expressions only.
+The version has no implementation of derivatives for base and special math functions.
+The version has evaluation implementation for REAL values only (not Complex, Vector and other).
+
+Commercial, fully functional version can be ordered 
+directly from author lrndlrnd@mail.ru.
+
+SERVICES: you can order services directly from author
+         - Adopt the library for your special applications;
+         - Creating new library extensions for new math areas.
+
