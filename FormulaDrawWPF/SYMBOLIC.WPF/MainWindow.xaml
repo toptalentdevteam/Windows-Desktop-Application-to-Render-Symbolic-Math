@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:controls="clr-namespace:WpfMath.Controls;assembly=WpfMath"
         Title="Formula draw and evaluation in WPF applications" 
-		Height="694" Width="985" MinHeight="300" MinWidth="600" 
+		Height="694" Width="858" MinHeight="300" MinWidth="600" 
 		FontWeight="Bold"
 		Loaded="Window_Loaded">
     <Grid>

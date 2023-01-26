@@ -85,7 +85,23 @@ namespace TeXConverter.WPF
         // This function is called when the text of the text editor is changed.
         public void OnTextChange(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Changed...");
+            string f = inputTextBox.Text;
+            try
+            {
+                if (translator.CheckSyntax(f))
+                {
+                    object v = translator.Calculate(f);
+
+                    string texf = converter.Convert(f);
+                    string vs = Utilities.SafeToString(v);
+
+                    formulaControl.Formula = texf + " = {" + vs + "}";
+                }
+            }
+            catch (Exception ex)
+            {
+                formulaControl.Formula = ex.Message;
+            }
         }
 
         #region Example interface 
