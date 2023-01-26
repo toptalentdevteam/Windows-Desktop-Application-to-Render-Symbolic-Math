@@ -82,6 +82,12 @@ namespace TeXConverter.WPF
             
         }
 
+        // This function is called when the text of the text editor is changed.
+        public void OnTextChange(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Changed...");
+        }
+
         #region Example interface 
 
 

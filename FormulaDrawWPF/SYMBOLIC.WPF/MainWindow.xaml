@@ -13,8 +13,7 @@
                                          SelectionBrush="LightBlue" SnapsToDevicePixels="True" Height="363" />
             </ScrollViewer>
         </Border>
-        <TextBox Name="inputTextBox" FontSize="30" Height="86" Margin="178,14,10,0" TextWrapping="Wrap" Text="A*x^2/(m-1)!+B*e^sin(y+1)/n!+C*log{n+m}(z^2)" VerticalAlignment="Top"/>
-        <Label Content="f(A, B, C, x, y, z, m, n) = " FontSize="30" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="163" Height="85"/>
-        <Button Name="ButtonEvaluate" Content="Evaluate and draw" HorizontalAlignment="Center" Margin="0,137,0,0" VerticalAlignment="Top" Width="130" Height="47" Click="ButtonEvaluate_Click"/>
+        <TextBox Name="inputTextBox" FontSize="30" Height="86" Margin="10,14,10,0" Padding="10,15,10,10" TextWrapping="Wrap" Text="A*x^2/(m-1)!+B*e^sin(y+1)/n!+C*log{n+m}(z^2)" VerticalAlignment="Top" TextChanged="OnTextChange" />
+        <Button Name="ButtonEvaluate" Content="Evaluate and draw" HorizontalAlignment="Center" Margin="0,124,0,0" VerticalAlignment="Top" Width="130" Height="60" Click="ButtonEvaluate_Click"/>
     </Grid>
 </Window>
