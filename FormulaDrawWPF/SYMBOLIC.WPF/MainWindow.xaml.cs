@@ -24,6 +24,7 @@ namespace TeXConverter.WPF
 		private void LoadExtensions(string[] exts)
 	    {
 			int n = exts.Length;
+
 			for (int i = 0; i < n; i++)
 			{
 				string sname = exts[i];

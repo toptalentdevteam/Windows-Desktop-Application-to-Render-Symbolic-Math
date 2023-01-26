@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:controls="clr-namespace:WpfMath.Controls;assembly=WpfMath"
         Title="Formula draw and evaluation in WPF applications" 
-		Height="720" Width="1024" MinHeight="300" MinWidth="600" 
+		Height="694" Width="985" MinHeight="300" MinWidth="600" 
 		FontWeight="Bold"
 		Loaded="Window_Loaded">
     <Grid>
@@ -16,6 +16,6 @@
         </Border>
         <TextBox Name="inputTextBox" FontSize="14" Height="29" Margin="178,14,10,0" TextWrapping="Wrap" Text="A*x^2/(m-1)!+B*e^sin(y+1)/n!+C*log{n+m}(z^2)" VerticalAlignment="Top"/>
         <Label Content="f(A, B, C, x, y, z, m, n) = " FontSize="14" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="163"/>
-        <Button Name="ButtonEvaluate" Content="Evaluate and draw" HorizontalAlignment="Left" Margin="338,61,0,0" VerticalAlignment="Top" Width="129" Height="25" Click="ButtonEvaluate_Click"/>
+        <Button Name="ButtonEvaluate" Content="Evaluate and draw" HorizontalAlignment="Center" Margin="0,48,0,0" VerticalAlignment="Top" Width="130" Height="47" Click="ButtonEvaluate_Click"/>
     </Grid>
 </Window>
