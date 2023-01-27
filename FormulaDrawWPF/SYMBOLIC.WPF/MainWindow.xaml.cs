@@ -95,7 +95,7 @@ namespace TeXConverter.WPF
                     string texf = converter.Convert(text);
                     string vs = Utilities.SafeToString(v);
 
-                    formulaControl1.Formula = texf + " = {" + vs + "}";
+                    formulaControl1.Formula = texf;
                 }
             }
             catch (Exception ex)
@@ -122,7 +122,7 @@ namespace TeXConverter.WPF
                     string texf = converter.Convert(text);
                     string vs = Utilities.SafeToString(v);
 
-                    formulaControl2.Formula = texf + " = {" + vs + "}";
+                    formulaControl2.Formula = texf;
                 }
             }
             catch (Exception ex)
