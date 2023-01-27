@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Reflection;
 using System.Windows;
+using System.Windows.Controls;
 using Analytics;
 using Exversion;
 using Exversion.Analytics;
@@ -63,6 +64,7 @@ namespace TeXConverter.WPF
         private void ButtonEvaluate_Click(object sender, RoutedEventArgs e)
         {
             string f = inputTextBox.Text;
+
             try
             {
                 if (translator.CheckSyntax(f))
@@ -83,9 +85,14 @@ namespace TeXConverter.WPF
         }
 
         // This function is called when the text of the text editor is changed.
-        public void OnTextChange(object sender, RoutedEventArgs e)
+        private void OnTextChange(object sender, TextChangedEventArgs e)
         {
             string f = inputTextBox.Text;
+
+            if(f == null)
+            {
+                return;
+            }
 
             try
             {

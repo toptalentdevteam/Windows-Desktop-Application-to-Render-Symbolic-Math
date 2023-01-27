@@ -8,12 +8,12 @@
 		Loaded="Window_Loaded">
     <Grid>
         <Border Margin="10,100,10,10" BorderBrush="LightGray" BorderThickness="1" >
-            <ScrollViewer Padding="4" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+            <ScrollViewer Padding="4" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled" Margin="0,101,0,0">
                 <controls:FormulaControl x:Name="formulaControl" Scale="40"
                                          SelectionBrush="LightBlue" SnapsToDevicePixels="True" Height="363" />
             </ScrollViewer>
         </Border>
-        <TextBox Name="inputTextBox" FontSize="30" Height="86" Margin="10,14,10,0" Padding="10,15,10,10" TextWrapping="Wrap" Text="A*x^2/(m-1)!+B*e^sin(y+1)/n!+C*log{n+m}(z^2)" VerticalAlignment="Top" TextChanged="OnTextChange" />
+        <TextBox Name="inputTextBox" FontSize="30" Height="86" Margin="10,14,10,0" Padding="10,15,10,10" TextWrapping="Wrap" Text="" VerticalAlignment="Top" TextChanged="OnTextChange" />
         <Button Name="ButtonEvaluate" Content="Evaluate and draw" HorizontalAlignment="Center" Margin="0,124,0,0" VerticalAlignment="Top" Width="130" Height="60" Click="ButtonEvaluate_Click"/>
     </Grid>
 </Window>
