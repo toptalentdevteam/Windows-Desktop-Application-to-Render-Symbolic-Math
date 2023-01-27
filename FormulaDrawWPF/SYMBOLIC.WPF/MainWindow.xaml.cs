@@ -63,31 +63,13 @@ namespace TeXConverter.WPF
 
         private void ButtonEvaluate_Click(object sender, RoutedEventArgs e)
         {
-            string f = inputTextBox.Text;
-
-            try
-            {
-                if (translator.CheckSyntax(f))
-                {
-                    object v = translator.Calculate(f);
-
-                    string texf = converter.Convert(f);
-                    string vs = Utilities.SafeToString(v);
-
-                    formulaControl.Formula = texf + " = {" + vs + "}";
-                }
-            }
-            catch (Exception ex)
-            {
-                formulaControl.Formula = ex.Message;
-            }
             
         }
 
         // This function is called when the text of the text editor is changed.
-        private void OnTextChange(object sender, TextChangedEventArgs e)
+        private void OnTextChange1(object sender, TextChangedEventArgs e)
         {
-            string f = inputTextBox.Text;
+            string f = inputTextBox1.Text;
 
             if(f == null)
             {
@@ -103,12 +85,39 @@ namespace TeXConverter.WPF
                     string texf = converter.Convert(f);
                     string vs = Utilities.SafeToString(v);
 
-                    formulaControl.Formula = texf + " = {" + vs + "}";
+                    formulaControl1.Formula = texf + " = {" + vs + "}";
                 }
             }
             catch (Exception ex)
             {
-                formulaControl.Formula = ex.Message;
+                formulaControl1.Formula = ex.Message;
+            }
+        }
+
+        private void OnTextChange2(object sender, TextChangedEventArgs e)
+        {
+            string f = inputTextBox2.Text;
+
+            if (f == null)
+            {
+                return;
+            }
+
+            try
+            {
+                if (translator.CheckSyntax(f))
+                {
+                    object v = translator.Calculate(f);
+
+                    string texf = converter.Convert(f);
+                    string vs = Utilities.SafeToString(v);
+
+                    formulaControl2.Formula = texf + " = {" + vs + "}";
+                }
+            }
+            catch (Exception ex)
+            {
+                formulaControl2.Formula = ex.Message;
             }
         }
 
