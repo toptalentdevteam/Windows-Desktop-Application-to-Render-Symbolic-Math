@@ -79,20 +79,20 @@ namespace TeXConverter.WPF
         // This function is called when the text of the text editor is changed.
         private void OnTextChange1(object sender, TextChangedEventArgs e)
         {
-            string f = inputTextBox1.Text;
+            string text = inputTextBox1.Text;
 
-            if(f == null)
+            if(text == null)
             {
                 return;
             }
 
             try
             {
-                if (translator.CheckSyntax(f))
+                if (translator.CheckSyntax(text))
                 {
-                    object v = translator.Calculate(f);
+                    object v = translator.Calculate(text);
 
-                    string texf = converter.Convert(f);
+                    string texf = converter.Convert(text);
                     string vs = Utilities.SafeToString(v);
 
                     formulaControl1.Formula = texf + " = {" + vs + "}";
@@ -106,20 +106,20 @@ namespace TeXConverter.WPF
 
         private void OnTextChange2(object sender, TextChangedEventArgs e)
         {
-            string f = inputTextBox2.Text;
+            string text = inputTextBox2.Text;
 
-            if (f == null)
+            if (text == null)
             {
                 return;
             }
 
             try
             {
-                if (translator.CheckSyntax(f))
+                if (translator.CheckSyntax(text))
                 {
-                    object v = translator.Calculate(f);
+                    object v = translator.Calculate(text);
 
-                    string texf = converter.Convert(f);
+                    string texf = converter.Convert(text);
                     string vs = Utilities.SafeToString(v);
 
                     formulaControl2.Formula = texf + " = {" + vs + "}";
