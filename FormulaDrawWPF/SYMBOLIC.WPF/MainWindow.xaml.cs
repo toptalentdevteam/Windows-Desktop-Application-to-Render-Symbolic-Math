@@ -63,7 +63,17 @@ namespace TeXConverter.WPF
 
         private void ButtonEvaluate_Click(object sender, RoutedEventArgs e)
         {
-            
+            string text1 = inputTextBox1.Text;
+            string text2 = inputTextBox2.Text;
+
+            if(text1 == text2)
+            {
+                MessageBox.Show("Two expressions are equivalent.");
+            }
+            else
+            {
+                MessageBox.Show("Two expressions aren't equivalent.");
+            }
         }
 
         // This function is called when the text of the text editor is changed.
@@ -120,12 +130,6 @@ namespace TeXConverter.WPF
                 formulaControl2.Formula = ex.Message;
             }
         }
-
-        #region Example interface 
-
-
-
-        #endregion Example interface				
     }
 
 }
