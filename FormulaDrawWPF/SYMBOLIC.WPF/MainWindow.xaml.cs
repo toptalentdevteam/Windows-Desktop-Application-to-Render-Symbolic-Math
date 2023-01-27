@@ -86,6 +86,7 @@ namespace TeXConverter.WPF
         public void OnTextChange(object sender, RoutedEventArgs e)
         {
             string f = inputTextBox.Text;
+
             try
             {
                 if (translator.CheckSyntax(f))
