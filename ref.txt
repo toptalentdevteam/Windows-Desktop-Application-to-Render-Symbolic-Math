@@ -2,4 +2,4 @@
 
 https://www.desmos.com/calculator
 
-A*x^2/(m-1)!+B*e^sin(y+1)/n!+C*log{n+m}(z^2)
+A*x^2/(m-1)!+B*e^sin(y+1)/n!+C*log{n+m}(z^2)      ///
