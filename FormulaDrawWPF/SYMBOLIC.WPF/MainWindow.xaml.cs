@@ -29,6 +29,7 @@ namespace TeXConverter.WPF
 			for (int i = 0; i < n; i++)
 			{
 				string sname = exts[i];
+
 				try
 				{
 					Assembly.Load(sname);
@@ -118,7 +119,6 @@ namespace TeXConverter.WPF
                 if (translator.CheckSyntax(text))
                 {
                     object v = translator.Calculate(text);
-
                     string texf = converter.Convert(text);
                     string vs = Utilities.SafeToString(v);
 
