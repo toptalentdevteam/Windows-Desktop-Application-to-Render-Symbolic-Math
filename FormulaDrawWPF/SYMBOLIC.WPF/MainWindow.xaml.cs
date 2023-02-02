@@ -95,8 +95,7 @@ namespace TeXConverter.WPF
             try
             {
                 string texf = converter.Convert(text);
-                formulaControl1.Formula = texf;
-                
+                formulaControl1.Formula = texf;                
             }
             catch (Exception ex)
             {

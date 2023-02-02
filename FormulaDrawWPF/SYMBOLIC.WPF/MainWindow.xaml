@@ -8,15 +8,15 @@
 		Loaded="Window_Loaded">
     <Grid Margin="0,0,0,142">
         <Border Margin="31,226,24,112" BorderBrush="LightGray" BorderThickness="1" >
-            <ScrollViewer Padding="4" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled" Margin="0,101,0,0">
+            <ScrollViewer Padding="4" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled" Margin="0,9,0,0">
                 <controls:FormulaControl x:Name="formulaControl1" Scale="40"
-                                         SelectionBrush="LightBlue" SnapsToDevicePixels="True" Height="132" />
+                                         SelectionBrush="LightBlue" SnapsToDevicePixels="True" Height="238" />
             </ScrollViewer>
         </Border>
         <Border Margin="31,509,24,-121" BorderBrush="LightGray" BorderThickness="1" >
-            <ScrollViewer Padding="4" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled" Margin="0,101,0,0">
+            <ScrollViewer Padding="4" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled" Margin="0,9,0,0">
                 <controls:FormulaControl x:Name="formulaControl2" Scale="40"
-                                         SelectionBrush="LightBlue" SnapsToDevicePixels="True" Height="132" />
+                                         SelectionBrush="LightBlue" SnapsToDevicePixels="True" Height="198" />
             </ScrollViewer>
         </Border>
         <TextBox Name="inputTextBox1" FontSize="30" Height="82" Margin="31,28,182,0" Padding="10,15,10,10" TextWrapping="Wrap" Text="" VerticalAlignment="Top" TextChanged="OnTextChange1" />
