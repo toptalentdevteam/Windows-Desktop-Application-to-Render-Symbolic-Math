@@ -2,6 +2,7 @@
 using System.Reflection;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Forms;
 using Analytics;
 using Exversion;
 using Exversion.Analytics;
@@ -15,8 +16,7 @@ namespace TeXConverter.WPF
     public partial class MainWindow : Window
     {
         private Translator translator;
-        //private BaseConverter converter;
-        private AnalyticsConverter converter;
+        private BaseConverter converter;
 
         public MainWindow()
 		{
@@ -48,16 +48,9 @@ namespace TeXConverter.WPF
 
             converter = new AnalyticsTeXConverter();
             translator = new Translator();
-		    //translator.Add("A", 2.0);
-		    //translator.Add("B",-1.0);
-		    //translator.Add("C", 0.5);
-      //      translator.Add("x", 1.0);
-		    //translator.Add("y", 2.0/3);
-		    //translator.Add("z",-3.0);
-		    //translator.Add("m", 2);
-		    //translator.Add("n", 5);
+            inputTextBox1.Focus();
         }
-
+        
 		private void Window_Loaded(object sender, RoutedEventArgs e)
 		{
 		    InitializeAnalytics();
@@ -78,13 +71,21 @@ namespace TeXConverter.WPF
                 result = "Two expressions aren't equivalent.";
             }
 
-            MessageBox.Show(result, "Result", MessageBoxButton.OK, MessageBoxImage.Information);
+            System.Windows.MessageBox.Show(result, "Result", MessageBoxButton.OK, MessageBoxImage.Information);                 
+            
         }
 
         // This function is called when the text of the text editor is changed.
         private void OnTextChange1(object sender, TextChangedEventArgs e)
         {
             string text = inputTextBox1.Text;
+
+            if(text.Contains("sqrt"))
+            {
+                text = text.Replace("sqrt", "√");
+                inputTextBox1.Text = text;
+                inputTextBox1.Select(inputTextBox1.Text.Length, 0);
+            }
 
             if(text == null)
             {
@@ -93,14 +94,9 @@ namespace TeXConverter.WPF
 
             try
             {
-                //if (translator.CheckSyntax(text))                
-                {
-                    //    object v = translator.Calculate(text);
-                    string texf = converter.Convert(text);
-                    //string vs = Utilities.SafeToString(v);
-
-                    formulaControl1.Formula = texf;
-                }
+                string texf = converter.Convert(text);
+                formulaControl1.Formula = texf;
+                
             }
             catch (Exception ex)
             {
@@ -112,6 +108,13 @@ namespace TeXConverter.WPF
         {
             string text = inputTextBox2.Text;
 
+            if (text.Contains("sqrt"))
+            {
+                text = text.Replace("sqrt", "√");
+                inputTextBox2.Text = text;
+                inputTextBox2.Select(inputTextBox2.Text.Length, 0);
+            }
+
             if (text == null)
             {
                 return;
@@ -119,14 +122,9 @@ namespace TeXConverter.WPF
 
             try
             {
-                if (translator.CheckSyntax(text))
-                {
-                    object v = translator.Calculate(text);
-                    string texf = converter.Convert(text);
-                    string vs = Utilities.SafeToString(v);
+                string texf = converter.Convert(text);
+                formulaControl2.Formula = texf;
 
-                    formulaControl2.Formula = texf;
-                }
             }
             catch (Exception ex)
             {

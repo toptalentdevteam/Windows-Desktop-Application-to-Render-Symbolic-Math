@@ -1,12 +1,12 @@
 D:\_Dev\_My projects\_Windows Desktop Application to Render Symbolic Math\FormulaDrawWPF\SYMBOLIC.WPF\bin\Debug\TeXConverter.WPF.exe
-D:\_Dev\_My projects\_Windows Desktop Application to Render Symbolic Math\FormulaDrawWPF\SYMBOLIC.WPF\bin\Debug\TeXConverter.WPF.pdb
 D:\_Dev\_My projects\_Windows Desktop Application to Render Symbolic Math\FormulaDrawWPF\SYMBOLIC.WPF\bin\Debug\Analytics.dll
 D:\_Dev\_My projects\_Windows Desktop Application to Render Symbolic Math\FormulaDrawWPF\SYMBOLIC.WPF\bin\Debug\Analytics.Real.dll
 D:\_Dev\_My projects\_Windows Desktop Application to Render Symbolic Math\FormulaDrawWPF\SYMBOLIC.WPF\bin\Debug\Exversion.dll
-D:\_Dev\_My projects\_Windows Desktop Application to Render Symbolic Math\FormulaDrawWPF\SYMBOLIC.WPF\bin\Debug\Mathematics.dll
 D:\_Dev\_My projects\_Windows Desktop Application to Render Symbolic Math\FormulaDrawWPF\SYMBOLIC.WPF\bin\Debug\NRTE.dll
 D:\_Dev\_My projects\_Windows Desktop Application to Render Symbolic Math\FormulaDrawWPF\SYMBOLIC.WPF\bin\Debug\Physics.dll
 D:\_Dev\_My projects\_Windows Desktop Application to Render Symbolic Math\FormulaDrawWPF\SYMBOLIC.WPF\bin\Debug\WpfMath.dll
+D:\_Dev\_My projects\_Windows Desktop Application to Render Symbolic Math\FormulaDrawWPF\SYMBOLIC.WPF\bin\Debug\TeXConverter.WPF.pdb
+D:\_Dev\_My projects\_Windows Desktop Application to Render Symbolic Math\FormulaDrawWPF\SYMBOLIC.WPF\bin\Debug\Mathematics.dll
 D:\_Dev\_My projects\_Windows Desktop Application to Render Symbolic Math\FormulaDrawWPF\SYMBOLIC.WPF\bin\Debug\Analytics.xml
 D:\_Dev\_My projects\_Windows Desktop Application to Render Symbolic Math\FormulaDrawWPF\SYMBOLIC.WPF\bin\Debug\Analytics.Real.xml
 D:\_Dev\_My projects\_Windows Desktop Application to Render Symbolic Math\FormulaDrawWPF\SYMBOLIC.WPF\bin\Debug\Exversion.xml
